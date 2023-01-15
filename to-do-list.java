@@ -16,4 +16,20 @@ public class toDoList{
         System.out.println("4: Exit");
 
         int choice;
+        
+         // Error Check
+        do {
+            System.out.println("Please enter your option: ");
+            while (!sc.hasNextInt()){
+                System.out.println("Not a valid option");
+                sc.next();
+                }
+                choice = sc.nextInt();
+
+                // option 2
+                if (choice == 2){
+                    addList();
+                }
+            // condition must be false to escape loop
+        } while (choice > 1 && choice < 4);
      
