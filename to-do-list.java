@@ -1,35 +1,41 @@
 import java.util.Scanner;
-import java.util.List;
 import java.util.ArrayList;
 
 public class toDoList{
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         Scanner sc = new Scanner (System.in);
-
-        // Introduction
+        
+         // Assign variables 
+        ArrayList<String> currentlist = new ArrayList<String>();
+        int choice;
+        String task;
 
         System.out.println("This is a To-Do List!");
-        System.out.println("1: Show List");
-        System.out.println("2: Add to list");
-        System.out.println("3: Delete list");
-        System.out.println("4: Exit");
-
-        int choice;
-        
-         // Error Check
         do {
-            System.out.println("Please enter your option: ");
-            while (!sc.hasNextInt()){
-                System.out.println("Not a valid option");
-                sc.next();
-                }
-                choice = sc.nextInt();
+            // Introduction
+            System.out.println();
+            System.out.println("1: Show List");
+            System.out.println("2: Add to list");
+            System.out.println("3: Delete list");
+            System.out.println("4: Exit");
+            
+            choice = input.nextInt();
+            switch(choice){
 
-                // option 2
-                if (choice == 2){
-                    addList();
-                }
-            // condition must be false to escape loop
-        } while (choice > 1 && choice < 4);
-     
+                //Option 1 - Show the list
+                case (1):
+                    System.out.println(currentlist);
+                    break;
+
+                //Option 2 - add to list
+                case (2):
+                    System.out.println("Enter a task: ");
+                    task = sc.nextLine();
+                    currentlist.add(task);
+            
+            }
+        } while (choice > 0 && choice < 5);
+        System.out.println("Please enter a valid option.");
+    }
+}
