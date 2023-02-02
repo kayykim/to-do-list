@@ -33,6 +33,8 @@ public class toDoList{
                     System.out.println("Enter a task: ");
                     task = sc.nextLine();
                     currentlist.add(task);
+                    
+                //Option 3 - remove from list
             }
         } while (choice > 0 && choice < 5);
         System.out.println("Please enter a valid option.");
