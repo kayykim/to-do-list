@@ -35,6 +35,12 @@ public class toDoList{
                     currentlist.add(task);
                     
                 //Option 3 - remove from list
+                case (3):
+                    System.out.println("Enter the number you would like to delete");
+                    for (String element: current list) {
+                    System.out.println(element);
+                }
+      
             }
         } while (choice > 0 && choice < 5);
         System.out.println("Please enter a valid option.");
