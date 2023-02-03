@@ -36,9 +36,12 @@ public class toDoList{
                     
                 //Option 3 - remove from list
                 case (3):
+                    int count = 0;
+                    
                     System.out.println("Enter the number you would like to delete");
                     for (String element: current list) {
-                    System.out.println(element);
+                        count ++;
+                        System.out.println(count + ": " + element);
                 }
       
             }
