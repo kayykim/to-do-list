@@ -43,7 +43,6 @@ public class toDoList{
                         count ++;
                         System.out.println(count + ": " + element);
                 }
-      
             }
         } while (choice > 0 && choice < 5);
         System.out.println("Please enter a valid option.");
