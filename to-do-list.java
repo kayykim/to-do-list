@@ -36,6 +36,8 @@ public class toDoList{
                     
                 //Option 3 - remove from list
                 case (3):
+                    currentlist.forEach(System.out::println);
+
             }
         } while (choice > 0 && choice < 5);
         System.out.println("Please enter a valid option.");
