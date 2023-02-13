@@ -37,6 +37,9 @@ public class toDoList{
                 //Option 3 - remove from list
                 case (3):
                     currentlist.forEach(System.out::println);
+                    
+                    System.out.println("Which task would you like to delete?");
+                    String delete = sc.nextLine();
 
             }
         } while (choice > 0 && choice < 5);
