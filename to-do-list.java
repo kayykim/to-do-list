@@ -40,6 +40,12 @@ public class toDoList{
                     
                     System.out.println("Which task would you like to delete?");
                     String delete = sc.nextLine();
+                    
+                    if (currentlist.contains(delete)) {
+                        int location = currentlist.indexOf(delete);
+                        System.out.println(currentlist.remove(location) + " has been marked as completed");
+                        break;
+             
 
             }
         } while (choice > 0 && choice < 5);
