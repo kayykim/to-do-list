@@ -45,6 +45,12 @@ public class toDoList{
                         int location = currentlist.indexOf(delete);
                         System.out.println(currentlist.remove(location) + " has been marked as completed");
                         break;
+                    }
+                    
+                    else {
+                        System.out.println("Not a task found in your list");
+                        break;
+                    }
              
 
             }
