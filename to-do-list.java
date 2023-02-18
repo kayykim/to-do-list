@@ -54,7 +54,8 @@ public class toDoList{
              
 
             }
-        } while (choice > 0 && choice < 5);
+                // Option 4 - exit
+        } while (choice > 0 && choice < 4);
         System.out.println("Please enter a valid option.");
     }
 }
